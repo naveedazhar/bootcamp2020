@@ -28,5 +28,5 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./ ${{secrets.SURGE_WEBSITE_URL}} --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ ${{secrets.SURGE_DOMAIN}} --token ${{secrets.SURGE_WEBSITE_TOKEN}}
     - run: echo "Please visit website => ${{ secrets.SURGE_DOMAIN }}"
